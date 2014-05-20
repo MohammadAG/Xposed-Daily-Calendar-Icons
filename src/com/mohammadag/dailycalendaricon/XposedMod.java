@@ -84,6 +84,7 @@ public class XposedMod implements IXposedHookZygoteInit {
 		paint.setColor(Color.parseColor("#3b83f5")); 
 		paint.setTextSize(42); 
 		paint.setTextAlign(Align.CENTER);
+		paint.setAntiAlias(true);
 
 		Canvas canvas = new Canvas(bm);
 		canvas.drawText(text, bm.getWidth()/2, (bm.getHeight()*2/3)-5, paint);
